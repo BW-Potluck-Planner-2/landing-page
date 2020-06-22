@@ -240,14 +240,23 @@ footer{
           font-size: 1.5rem;
       }
 
-      #hero-text{
-        display:None;
+      .b4{
+        margin-bottom:5%;
+    }
+
+
+    #hero-image{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+        width:100%;
     }
 
       #hero-text p{
-        width: 25%;
+        width: 100%;
         margin:2%;
         padding:2%;
-        font-size:1rem;
+        font-size:1.5rem;
     }
 }
