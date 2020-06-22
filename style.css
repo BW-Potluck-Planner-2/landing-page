@@ -22,8 +22,6 @@ time, mark, audio, video {
 body {
   font-size: 62.5%;
   font-family: 'Architects Daughter', cursive;
-  width:90%;
-  margin:2% auto;
   background-color:#faebd7;
 }
 
@@ -170,10 +168,19 @@ footer{
     header h1 {
         padding:3%;
         font-size: 3rem;
+        margin-bottom:5%;
+    }
+
+    #hero-image{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+        width:100%;
     }
 
     #hero-text p{
-        font-size:2rem;
+        font-size:3rem;
     }
 
     #text-flex{
@@ -195,10 +202,23 @@ footer{
         margin:1%;
     }
 
+
+    .nav-landing{
+        justify-content:center;
+    }
+
     .nav-landing2{
         display:flex;
-        justify-content:flex-end;
+        justify-content:center;
       }
+
+      .b4{
+        margin-right:5%;
+    }
+
+    .b1 {
+        margin-left:5%;
+    }
 
 }
 
@@ -242,6 +262,11 @@ footer{
 
       .b4{
         margin-bottom:5%;
+        margin-right:0%;
+    }
+
+    .b1 {
+        margin-left:0%;
     }
 
 
