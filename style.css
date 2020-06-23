@@ -27,9 +27,6 @@ body {
   background-color:#faebd7;
 }
 
-header {
-    margin:2%;
-}
 
 #potluck-logo {
   display:flex;
@@ -165,132 +162,6 @@ footer{
     margin:2%;
 }
 
-@media (max-width:1000px){
-    #potluck-logo{
-        flex-direction:column;
-    }
-    header h1 {
-        padding:3%;
-        font-size: 3rem;
-        margin-bottom:5%;
-    }
-
-    #hero-image{
-        display:flex;
-        flex-direction:column;
-        justify-content: flex-end;
-        align-items: center;
-        width:100%;
-    }
-
-    #hero-text p{
-        font-size:3rem;
-    }
-
-    #text-flex{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        font-size:1.5rem;
-    }
-
-    #bottom-p1{
-        width:50%;
-        padding:3% 5%;
-        margin:1%;
-    }
-    
-    #bottom-p2{
-        width:50%;
-        padding:3% 5%;
-        margin:1%;
-    }
-
-
-    .nav-landing{
-        justify-content:center;
-    }
-
-    .nav-landing2{
-        display:flex;
-        justify-content:center;
-      }
-
-    .b4{
-        margin-right:5%;
-    }
-
-    .b1 {
-        margin-left:5%;
-    }
-
-}
-
-@media (max-width:500px){
-    header h1 {
-        padding:3%;
-        font-size: 2rem;
-    }
-    .nav-landing{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-      }
-      
-      .nav-landing2{
-          display:flex;
-          flex-direction:column;
-          align-items: center;
-        }
-
-        #bottom-p1{
-            width: 75%;
-            padding:10% 5%;
-            margin:1%;
-        }
-        
-        #bottom-p2{
-            width:75%;
-            padding:10% 5%;
-            margin:1%;
-        }
-      
-      a {
-          width:50%;
-          padding:3% 1%;
-          margin:1% 0%;
-          border-radius:25%;
-          border:6px dashed black;
-          font-size: 1.5rem;
-          text-align:center;
-      }
-
-      .b4{
-        margin-bottom:5%;
-        margin-right:0%;
-    }
-
-    .b1 {
-        margin-left:0%;
-    }
-
-
-    #hero-image{
-        display:flex;
-        flex-direction:column;
-        justify-content: flex-end;
-        align-items: center;
-        width:100%;
-    }
-
-      #hero-text p{
-        width: 100%;
-        margin:2%;
-        padding:2%;
-        font-size:1.5rem;
-    }
-}
-
 /* Styling for the Stories Page */
 
 #potluck-logo2 {
@@ -317,28 +188,233 @@ footer{
         align-items:center;
     }
 
+    .line-one{
+        display:flex;
+        margin-bottom:3%;
+        width:50%;
+        margin:2% 25%;
+        justify-content:space-evenly;
+    }
+
     .content-one{
         display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:space-between;
+        margin:5%;
     }
     
-    .line-one{
-        display:flex;
-        justify-content:space-evenly;
-        margin-bottom:3%;
-        width:65%;
-    }
-
     .stories{
         height:400px;
         width:400px;
         border-radius:25%;
-        padding:5%;
+        margin:5%;
+        padding:2%;
+        background-color:black;
     }
 
-    p{
+    .blue{
+        background-color:#9FB9BF;
         font-size:1.5rem;
         width:90%;
         border: 6px dashed black;
+    }
+
+    .green{
+        background-color:#cbe2b0;
+        font-size:1.5rem;
+        width:90%;
+        border: 6px dashed black;
+    }
+
+    @media (max-width:1000px){
+        #potluck-logo{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    
+        #potluck-logo2{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    
+        .nav-landing3{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    
+        .nav-landing4{
+            justify-content:center;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    
+        a{
+            width:50%;
+            padding:3% 1%;
+            border-radius:25%;
+            border:6px dashed black;
+            text-align:center;
+            font-size:4rem;
+        }
+    
+        .line-one{
+            display:flex;
+            flex-direction:column;
+        }
+    
+        header h1 {
+            padding:3%;
+            font-size: 4rem;
+            margin-bottom:5%;
+        }
+    
+        #hero-image{
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            align-items: center;
+            width:100%;
+        }
+    
+        #hero-text p{
+            font-size:3rem;
+        }
+    
+        #text-flex{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            font-size:1.5rem;
+        }
+    
+        #bottom-p1{
+            width:50%;
+            padding:3% 5%;
+            margin:1%;
+            font-size:2rem;
+        }
+        
+        #bottom-p2{
+            width:50%;
+            padding:3% 5%;
+            margin:1%;
+            font-size:2rem;
+        }
+    
+        .nav-landing{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .nav-landing2{
+              display:flex;
+              flex-direction:column;
+              align-items: center;
+              justify-content: center;
+            }
+    
+        .b4{
+            margin-right:5%;
+        }
+    
+        .b1 {
+            margin-left:5%;
+        }
+    
+    }
+    
+    @media (max-width:500px){
+        header h1 {
+            padding:3%;
+            font-size: 2rem;
+        }
+    
+        .nav-landing{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+          }
+          
+          .nav-landing2{
+              display:flex;
+              flex-direction:column;
+              align-items: center;
+            }
+
+            .nav-landing3{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                border:none;
+              }
+              
+              .nav-landing4{
+                  display:flex;
+                  flex-direction:column;
+                  align-items: center;
+                  border:none;
+                }
+    
+            #bottom-p1{
+                width: 75%;
+                padding:10% 5%;
+                margin:1%;
+            }
+            
+            #bottom-p2{
+                width:75%;
+                padding:10% 5%;
+                margin:1%;
+            }
+          
+          a {
+              width:50%;
+              padding:3% 1%;
+              margin:1% 0%;
+              border-radius:25%;
+              border:6px dashed black;
+              font-size: 1.5rem;
+              text-align:center;
+          }
+    
+          .b4{
+            margin-bottom:5%;
+            margin-right:0%;
+        }
+    
+        .b1 {
+            margin-left:0%;
+        }
+    
+    
+        #hero-image{
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            align-items: center;
+            width:100%;
+        }
+    
+          #hero-text p{
+            width: 100%;
+            margin:2%;
+            padding:2%;
+            font-size:1.5rem;
+        }
+    
+        .line-one{
+            display:flex;
+            margin-bottom:0%;
+            width:100%;
+            margin:0% 0%;
+            justify-content:none;
+        }
+    
     }
