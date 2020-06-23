@@ -64,17 +64,6 @@ h1 {
 	padding: 1%;
 }
 
-h2 {
-	font-size: 4rem;
-	background-color:#cbe2b0;
-	border:6px dashed black;
-	color:black;
-	border-radius:25%;
-	margin: 3%;
-	padding: 1%;
-	width: 100%;
-}
-
 h3 {
 	font-size: 3rem;
 	padding: 2%;
@@ -99,14 +88,13 @@ header img {
 	background-color: #f6d186;
 }
 
-nav button {
+nav a {
 	padding: 2%;
-	
+	width: 25%
 }
 .nav-landing{
 	display:flex;
 	justify-content:flex-end;
-	width: 75%100%;
 }
 button{
     padding:2% 3%;
@@ -131,64 +119,27 @@ button{
 .b4{
     background-color:#9FB9BF;
 }
-header div {
-	display:flex;
-	justify-content: center;
-	align-items:center;
-}
-main div{
-	text-align: center;
-	margin:5% 0;
-}
-section div {
-	width: 25%;
-	margin: 1%;
-	padding: 1%;
-	border: 6px dashed black;
-	border-radius: 25%;
-	text-align: center;
+
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
-section div img {
-	width: 100%;
-	border-top-left-radius: 35%;
-	border-top-right-radius: 35%;
+main div {
+    width: 25%;
+    margin: 1%;
+    padding: 1%;
+    border: 6px dashed black;
+    border-radius: 25%;
+    text-align: center;
+    object-fit: cover;
 }
 
-section div p {
-	width: 50%;
-	margin: auto;
-	padding: 1%;
-}
-section {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-}
-.box1 {
-	background-color:#f6d186 ;
-}
-.box2 {
-	background-color:#9FB9BF ;
-}
-.box3 {
-	background-color:#f19292 ;
-}
-.box4 {
-	background-color:#cbe2b0 ;
-}
-.box5 {
-	background-color:#f6d186 ;
-}
-footer{
-    padding:5% 0%;
-    margin:2%;
-}
-
-//Media queries
-
-@media(max-width: 1000px) {
-
-
+img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+    
+    
 }
