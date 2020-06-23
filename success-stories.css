@@ -185,3 +185,11 @@ footer nav {
 
 	}
 }
+
+@media(max-width: 500px) {
+	main div {
+		width: 85%;
+		border-bottom-left-radius: 0%;
+		border-bottom-right-radius: 0%;
+	}
+}
