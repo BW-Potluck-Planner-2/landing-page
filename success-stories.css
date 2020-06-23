@@ -77,6 +77,13 @@ h4{
 p {
 	font-size: 1rem;
 }
+
+header div{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
 header img {
 	width: 20%;
 	height: 100%;
@@ -88,13 +95,14 @@ header img {
 	background-color: #f6d186;
 }
 
-nav a {
+nav button {
 	padding: 2%;
 	width: 25%
 }
 .nav-landing{
 	display:flex;
 	justify-content:flex-end;
+	flex-wrap: wrap;
 }
 button{
     padding:2% 3%;
@@ -138,8 +146,42 @@ main div {
 img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 65px;
-    border-top-right-radius: 65px;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
     
     
+}
+footer nav {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+@media(max-width: 1000px) {
+	h1 {
+		font-size: 3rem;
+	}
+	header nav button {
+		font-size: 1rem;
+		width: 20%;
+	}
+
+	main {
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+	main div {
+		width: 35%;
+	}
+	img {
+		border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+	}
+
+	footer nav button {
+		font-size: 1rem;
+		width: 20%;
+
+	}
 }
