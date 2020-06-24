@@ -144,9 +144,9 @@ main div{
 	width: 100%;
 }
 main section div {
-	width: 45%;
+	width: 25%;
 	padding: 1%;
-	margin-bottom: 2%;
+	margin:0% .5% 2%;;
 	border: 6px dashed black;
 	border-radius: 25%;
 	text-align: center;
