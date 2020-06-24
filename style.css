@@ -116,24 +116,28 @@ a {
 #hero-text{
         display:flex;
         flex-direction: column;
-        text-align:center;
-        align-items:center;
-        height:100%;
-        padding:5%;
-        margin:2%;
-        color: black;
-        background-color:black;
-        border-radius:30%;
-        border:6px dashed black;
-        background-color: #f6d186;
-        
+        align-items: center;
+        text-align: start;
+        width:100%;
 }
 
-#hero-text p{
-    width:100%;
-    margin:5% 2%;
-    padding:2%;
-    font-size:5.5rem;
+.potluck-text-one{
+    width:80%;
+    margin:2%;
+    padding:5%;
+    font-size:7rem;
+    background-color: #f6d186;
+    border:10px dashed black;
+    border-radius:5%;
+}
+
+.potluck-text-two{
+    width:80%;
+    padding:5%;
+    font-size:7rem;
+    background-color:#9FB9BF;
+    border:10px dashed black;
+    border-radius:5%;
 }
 
 footer{
@@ -143,6 +147,11 @@ footer{
 }
 
 /* Styling for the Stories Page */
+
+.stories-link {
+    font-size:1.5rem;
+    border:none;
+}
 
 #potluck-logo2 {
     display:flex;
@@ -172,7 +181,7 @@ footer{
         display:flex;
         margin-bottom:3%;
         width:50%;
-        margin:2% 25%;
+        margin:0% 25%;
         justify-content:space-evenly;
     }
 
@@ -198,6 +207,7 @@ footer{
         font-size:1.5rem;
         width:90%;
         border: 6px dashed black;
+        padding:3%;
     }
 
     .green{
@@ -205,6 +215,7 @@ footer{
         font-size:1.5rem;
         width:90%;
         border: 6px dashed black;
+        padding:3%;
     }
 
     /* Styling for the Our Story Page */
@@ -221,6 +232,7 @@ footer{
         border: 6px dashed black;
         width:50%;
         border-radius:5%;
+        padding:2%;
     }
 
     .line-two {
@@ -244,6 +256,7 @@ footer{
         background-color:#cbe2b0;
         border: 6px dashed black;
         width:50%;
+        padding:4%;
     }
 
     .story-text-two{
@@ -251,14 +264,24 @@ footer{
         background-color:#cbe2b0;
         border: 6px dashed black;
         width:80%;
+        padding:4%;
     }
-
-
 
 
     /* media queries time */
 
     @media (max-width:1000px){
+        header h1 {
+            padding:3%;
+            width:80%;
+            text-align:center;
+            font-size: 5rem;
+            background-color:#cbe2b0;
+            border:6px dashed black;
+            color:black;
+            border-radius:25%;
+          }
+
         #potluck-logo{
             flex-direction:column;
             justify-content:center;
@@ -312,12 +335,16 @@ footer{
     
         #hero-text{
             width:95%;
-            height:100%;
         }
     
-        #hero-text p{
+        .potluck-text-one{
+            width:75%;
             font-size:5rem;
-            width: 100%;
+        }
+
+        .potluck-text-two{
+            width:75%;
+            font-size:5rem;
         }
 
         .nav-landing{
@@ -333,16 +360,43 @@ footer{
               align-items: center;
               justify-content: center;
             }
-    
-        .b4{
-            margin-right:5%;
-        }
-    
-        .b1 {
-            margin-left:5%;
-        }
-    
+
+            .line-one{
+                display:flex;
+                margin-bottom:3%;
+                width:100%;
+                margin:0% 25%;
+                justify-content:space-evenly;
+            }
+
+            .line-two {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .story-text-one{
+                width:80%;
+            }
+
     }
+
+    /* Tablet time!!!*/
+
+    @media (max-width:800px){
+
+        a{
+            width:40%;
+            padding:4% 1%;
+            border-radius:15%;
+            border:6px dashed black;
+            text-align:center;
+            font-size:3rem;
+        }
+
+    }
+
+    /* Phone time!!!*/
     
     @media (max-width:500px){
         header h1 {
@@ -397,9 +451,18 @@ footer{
             width:95%;
             height:100%;
         }
-    
-          #hero-text p{
-            width: 100%;
+
+        .potluck-text-one{
+            text-align: center;
+            width: 75%;
+            margin:2%;
+            padding:5%;
+            font-size:4rem;
+        }
+
+        .potluck-text-two{
+            text-align: center;
+            width: 75%;
             margin:2%;
             padding:5%;
             font-size:4rem;
@@ -412,5 +475,27 @@ footer{
             margin:0% 0%;
             justify-content:none;
         }
+
+        .story-header{
+            text-align:center;
+            font-size:5rem;
+            width:50%;
+        }
+    
+        .our-story {
+            height:300px;
+            width:300px;
+        }
+    
+        .story-text-one{
+            font-size:1.5rem;
+            padding:3%;
+        }
+    
+        .story-text-two{
+            font-size:1.5rem;
+            padding:3%;
+        }
+    
     
     }
