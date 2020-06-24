@@ -96,9 +96,6 @@ header img {
 	background-color: #f6d186;
 }
 
-nav button {
-	width: 20%
-}
 .nav-landing{
 	display:flex;
 	justify-content:space-between;
