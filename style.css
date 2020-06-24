@@ -113,7 +113,6 @@ a {
     align-items: center;
 }
 
-
 #hero-text{
         display:flex;
         flex-direction: column;
@@ -206,6 +205,38 @@ footer{
         font-size:1.5rem;
         width:90%;
         border: 6px dashed black;
+    }
+
+    /* Styling for the Our Story Page */
+
+    .story-header{
+        text-align:center;
+        font-size:8rem;
+        background-color:#f19292;
+        border: 6px dashed black;
+    }
+
+    .line-two {
+        display:flex;
+        justify-content: center;
+        margin: 2%;
+
+    }
+
+    .our-story {
+        height:400px;
+        width:400px;
+        margin:2%;
+        border-radius:25%;
+        padding:1%;
+        background-color:black;
+    }
+
+    .story-text{
+        font-size:2.0rem;
+        background-color:#cbe2b0;
+        border: 6px dashed black;
+        border-radius:5%;
     }
 
     /* media queries time */
