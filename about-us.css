@@ -113,6 +113,8 @@ button{
 
 button:hover {
 	cursor: pointer;
+	border-style: solid;
+	font-weight: bold;
 }
 
 .b1{
@@ -168,6 +170,18 @@ section {
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
+	animation-name: slide;
+	animation-duration: 2s;
+}
+@keyframes slide {
+	from {
+		margin-right: 100%;
+		opacity: 0;
+	}
+	to {
+		margin-right: 0%;
+		opacity: 1;
+	}
 }
 .box1 {
 	background-color:#f6d186 ;
@@ -212,7 +226,18 @@ footer nav {
 	}
 
 }
+@media(max-width: 800px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
 
+    li {
+        font-size: 1.75rem;;
+    }
+}
 @media(max-width: 500px) {
 	h1 {
 		font-size: 2.5rem;
