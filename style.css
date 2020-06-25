@@ -96,6 +96,7 @@ a:hover{
     color:white;
 }
 
+
 .b1{
     background-color: #f6d186;
 }
@@ -283,6 +284,19 @@ footer{
         padding:4%;
         border-radius: 5%;
     }
+
+    p:hover {
+        filter: brightness(75%);
+      }
+
+    h1:hover {
+        filter: brightness(75%);
+      }
+
+    h2:hover {
+        filter: brightness(75%);
+      }
+
 
 
     /* media queries time */
