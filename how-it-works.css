@@ -113,6 +113,8 @@ button{
 
 button:hover {
 	cursor: pointer;
+	border-style: solid;
+	font-weight: bold;
 }
 
 .b1{
@@ -138,27 +140,43 @@ header div {
 
 .title {
     width: 50%;
-    margin: 2% auto;
+    margin: 2% auto 4%;
     text-align: center;
+}
+
+@keyframes grow {
+	from {
+		margin-top: 100%;
+	}
+	to {
+		margin-top: 0%;
+	}
 }
 main div{
     width: 100%;
     font-size: 2.5rem;
-    line-height: 7rem;
+	line-height: 7rem;
+	animation-name: grow;
+	animation-duration: 2s;
+}
 }
 li {
     margin: 4rem;
 }
 img {
-    width: 40%;
+    width: 50%;
     height: auto;
     border-radius: 25%;
-    border:6px dashed black;
+	border:6px dashed black;
+	object-fit: cover;
 }
 .process {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.process div {
+	width: 45%;
 }
 footer{
     padding:5% 0%;
@@ -169,8 +187,6 @@ footer nav {
 	display: flex;
 	justify-content: space-between;
 }
-
-
 
 @media(max-width: 1000px) {
 
