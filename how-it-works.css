@@ -159,7 +159,7 @@ main div{
 	animation-name: grow;
 	animation-duration: 2s;
 }
-}
+
 li {
     margin: 4rem;
 }
@@ -181,22 +181,23 @@ img {
 footer{
     padding:5% 0%;
 	margin:2%;
-	width: 100%;
 }
 footer nav {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 @media(max-width: 1000px) {
 
-	.nav-landing2 {
-		display: flex;
-		flex-direction: column;
-	}
-
 	button {
 		font-size: 1rem;
+	}
+	.process div {
+		width: 80%;
+	}
+	.title {
+		width: 90%;
 	}
 
 }
@@ -205,10 +206,10 @@ footer nav {
     h1 {
         font-size: 2.5rem;
     }
-    h2 {
-        font-size: 2rem;
-    }
-
+    
+	.process div {
+		width: 90%;
+	}
     li {
         font-size: 1.75rem;;
     }
@@ -223,16 +224,22 @@ footer nav {
     }
     .title {
         width: 90%;
-        margin: 0%
     }
     main div {
-        line-height: 3rem;
-    }
-    li {
-        margin: 4rem;
-    }
-	button {
+		line-height: 3rem;
+		
+	}
+	.process div {
+		width: 90%;
+	}
+	.nav-landing2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+    footer nav button {
 		font-size: 1rem;
+		width: 80%;
 	}
 	
 }
